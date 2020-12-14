@@ -1,0 +1,10 @@
+# Kafka
+bootstrap.servers=<cluster_address>.us-east-1.aws.confluent.cloud:9092
+security.protocol=SASL_SSL
+sasl.mechanisms=PLAIN
+sasl.username=<your_username>
+sasl.password=<yourpassword>
+# Confluent Cloud Schema Registry
+schema.registry.url=https://{{ SR_ENDPOINT }}
+basic.auth.credentials.source=USER_INFO
+schema.registry.basic.auth.user.info={{ SR_API_KEY }}:{{ SR_API_SECRET }}
